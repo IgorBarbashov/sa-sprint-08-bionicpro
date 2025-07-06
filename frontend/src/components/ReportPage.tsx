@@ -57,7 +57,7 @@ const ReportPage: React.FC = () => {
         <h1 className="text-2xl font-bold mb-6">Usage Reports</h1>
         <button
           onClick={downloadReport}
-          disabled={loading || !hasUsageReportPermission}
+          disabled={loading}
           className={`px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 ${
             loading || !hasUsageReportPermission ? 'opacity-50 cursor-not-allowed' : ''
           }`}
